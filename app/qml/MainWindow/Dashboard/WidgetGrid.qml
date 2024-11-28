@@ -92,7 +92,7 @@ Widgets.Pane {
             icon.width: 24
             icon.height: 24
             toolbarButton: false
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter| Qt.AlignLeft
             text: Cpp_UI_Dashboard.actionTitles[index]
             icon.source: Cpp_UI_Dashboard.actionIcons[index]
             onClicked: Cpp_UI_Dashboard.activateAction(index)
