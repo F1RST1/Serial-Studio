@@ -170,7 +170,7 @@ Window {
 
         Image {
           sourceSize: Qt.size(120, 120)
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           source: "qrc:/rcc/images/donate-qr.svg"
 
           Rectangle {
@@ -238,7 +238,7 @@ Window {
         Button {
           id: closeBt
           onClicked: root.close()
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         }
 
         Button {
@@ -246,7 +246,7 @@ Window {
           text: qsTr("Donate")
           Keys.onEnterPressed: clicked()
           Keys.onReturnPressed: clicked()
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Component.onCompleted: forceActiveFocus()
           onClicked: Qt.openUrlExternally("https://www.paypal.com/donate?hosted_button_id=XN68J47QJKYDE")
         }

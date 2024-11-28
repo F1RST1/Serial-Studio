@@ -103,7 +103,7 @@ Widgets.Pane {
           iconSize: 24
           text: qsTr("Plot")
           toolbarButton: false
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           icon.source: "qrc:/rcc/icons/project-editor/actions/plot.svg"
           checked: Cpp_JSON_ProjectModel.datasetOptions & SerialStudio.DatasetPlot
           onClicked: {
@@ -120,7 +120,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("FFT Plot")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           icon.source: "qrc:/rcc/icons/project-editor/actions/fft.svg"
           checked: Cpp_JSON_ProjectModel.datasetOptions & SerialStudio.DatasetFFT
           onClicked: {
@@ -137,7 +137,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Bar/Level")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentDatasetIsEditable
           icon.source: "qrc:/rcc/icons/project-editor/actions/bar.svg"
           checked: Cpp_JSON_ProjectModel.datasetOptions & SerialStudio.DatasetBar
@@ -155,7 +155,7 @@ Widgets.Pane {
           iconSize: 24
           text: qsTr("Gauge")
           toolbarButton: false
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentDatasetIsEditable
           icon.source: "qrc:/rcc/icons/project-editor/actions/gauge.svg"
           checked: Cpp_JSON_ProjectModel.datasetOptions & SerialStudio.DatasetGauge
@@ -173,7 +173,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Compass")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentDatasetIsEditable
           icon.source: "qrc:/rcc/icons/project-editor/actions/compass.svg"
           checked: Cpp_JSON_ProjectModel.datasetOptions & SerialStudio.DatasetCompass
@@ -191,7 +191,7 @@ Widgets.Pane {
           iconSize: 24
           text: qsTr("LED")
           toolbarButton: false
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           icon.source: "qrc:/rcc/icons/project-editor/actions/led.svg"
           checked: Cpp_JSON_ProjectModel.datasetOptions & SerialStudio.DatasetLED
           onClicked: {
@@ -215,7 +215,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Duplicate")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentDatasetIsEditable
           onClicked: Cpp_JSON_ProjectModel.duplicateCurrentDataset()
           icon.source: "qrc:/rcc/icons/project-editor/actions/duplicate.svg"
@@ -228,7 +228,7 @@ Widgets.Pane {
           iconSize: 24
           text: qsTr("Delete")
           toolbarButton: false
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentDatasetIsEditable
           onClicked: Cpp_JSON_ProjectModel.deleteCurrentDataset()
           icon.source: "qrc:/rcc/icons/project-editor/actions/delete.svg"

@@ -61,7 +61,7 @@ Item {
     //
     Item {
       id: container
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       Layout.minimumWidth: Math.min(root.width, root.height) * 0.8
       Layout.maximumWidth: Math.min(root.width, root.height) * 0.8
       Layout.minimumHeight: Math.min(root.width, root.height) * 0.8

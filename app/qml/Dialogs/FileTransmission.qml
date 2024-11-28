@@ -149,13 +149,13 @@ Window {
               enabled: false
               Layout.fillWidth: true
               Layout.minimumWidth: 256
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               text: Cpp_IO_FileTransmission.fileName
             }
 
             Button {
               text: qsTr("Select File...")
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               onClicked: Cpp_IO_FileTransmission.openFile()
             }
           }
@@ -186,7 +186,7 @@ Window {
               to: 10000
               editable: true
               Layout.fillWidth: true
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               value: Cpp_IO_FileTransmission.lineTransmissionInterval
               onValueChanged: {
                 if (value !== Cpp_IO_FileTransmission.lineTransmissionInterval)
@@ -196,7 +196,7 @@ Window {
 
             Label {
               text: qsTr("msecs")
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               color: Cpp_ThemeManager.colors["text"]
             }
           }
@@ -221,7 +221,7 @@ Window {
             ColumnLayout {
               spacing: 4
               Layout.fillWidth: true
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
 
               Label {
                 text: qsTr("Progress: %1").arg(Cpp_IO_FileTransmission.transmissionProgress) + "%"

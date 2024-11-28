@@ -73,7 +73,7 @@ ColumnLayout {
 
       Label {
         text: qsTr("Parameter")
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         horizontalAlignment: Label.AlignLeft
         font: Cpp_Misc_CommonFonts.boldUiFont
         Layout.minimumWidth: root.parameterWidth
@@ -95,7 +95,7 @@ ColumnLayout {
         text: qsTr("Value")
         readOnly: true
         selectByMouse: false
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         Layout.minimumWidth: root.valueWidth
         Layout.maximumWidth: root.valueWidth
         horizontalAlignment: Label.AlignLeft
@@ -116,7 +116,7 @@ ColumnLayout {
 
       Label {
         text: qsTr("Parameter Description")
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         horizontalAlignment: Label.AlignLeft
         font: Cpp_Misc_CommonFonts.boldUiFont
         Layout.minimumWidth: root.descriptionWidth
@@ -190,7 +190,7 @@ ColumnLayout {
         //
         Label {
           text: model.parameterName
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.parameterWidth
           Layout.maximumWidth: root.parameterWidth
           color: Cpp_ThemeManager.colors["table_text"]
@@ -211,7 +211,7 @@ ColumnLayout {
         // Text field value editor
         //
         Loader {
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.valueWidth
           Layout.maximumWidth: root.valueWidth
           active: model.widgetType === ProjectModel.TextField
@@ -237,7 +237,7 @@ ColumnLayout {
         // Icon picker
         //
         Loader {
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.valueWidth
           Layout.maximumWidth: root.valueWidth
           active: model.widgetType === ProjectModel.IconPicker
@@ -259,7 +259,7 @@ ColumnLayout {
               readOnly: true
               Layout.fillWidth: true
               text: model.editableValue
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               font: Cpp_Misc_CommonFonts.monoFont
               placeholderText: model.placeholderValue
               color: Cpp_ThemeManager.colors["table_text"]
@@ -274,7 +274,7 @@ ColumnLayout {
               icon.width: 16
               icon.height: 16
               Layout.maximumWidth: 32
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               icon.color: Cpp_ThemeManager.colors["table_text"]
               icon.source: "qrc:/rcc/icons/project-editor/open.svg"
               onClicked: {
@@ -295,7 +295,7 @@ ColumnLayout {
         // Int number field value editor
         //
         Loader {
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.valueWidth
           Layout.maximumWidth: root.valueWidth
           active: model.widgetType === ProjectModel.IntField
@@ -330,7 +330,7 @@ ColumnLayout {
         // Double number field value editor
         //
         Loader {
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.valueWidth
           Layout.maximumWidth: root.valueWidth
           active: model.widgetType === ProjectModel.FloatField
@@ -372,7 +372,7 @@ ColumnLayout {
         // ComboBox value editor
         //
         Loader {
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.valueWidth
           Layout.maximumWidth: root.valueWidth
           active: model.widgetType === ProjectModel.ComboBox
@@ -399,7 +399,7 @@ ColumnLayout {
         // CheckBox value editor
         //
         Loader {
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.valueWidth
           Layout.maximumWidth: root.valueWidth
           active: model.widgetType === ProjectModel.CheckBox
@@ -439,7 +439,7 @@ ColumnLayout {
         Label {
           opacity: 0.8
           text: model.parameterDescription
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           Layout.minimumWidth: root.descriptionWidth
           Layout.maximumWidth: root.descriptionWidth
           color: Cpp_ThemeManager.colors["table_text"]

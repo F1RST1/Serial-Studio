@@ -149,7 +149,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Project Editor")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: app.showProjectEditor()
       icon.source: "qrc:/rcc/icons/toolbar/project-setup.svg"
       enabled: Cpp_JSON_FrameBuilder.operationMode == SerialStudio.ProjectFile
@@ -160,7 +160,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("CSV Player")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: Cpp_CSV_Player.openFile()
       icon.source: "qrc:/rcc/icons/toolbar/csv.svg"
       enabled: !Cpp_CSV_Player.isOpen && !Cpp_IO_Manager.connected
@@ -173,7 +173,7 @@ Rectangle {
       implicitWidth: 1
       Layout.fillHeight: true
       Layout.maximumHeight: 64
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       color: Cpp_ThemeManager.colors["toolbar_separator"]
     }
 
@@ -184,7 +184,7 @@ Rectangle {
       id: setupBt
       text: qsTr("Setup")
       onClicked: root.setupClicked()
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/toolbar/device-setup.svg"
     }
 
@@ -197,7 +197,7 @@ Rectangle {
       text: qsTr("Console")
       enabled: dashboardBt.enabled
       onClicked: root.consoleClicked()
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/toolbar/console.svg"
     }
 
@@ -208,7 +208,7 @@ Rectangle {
       implicitWidth: 1
       Layout.fillHeight: true
       Layout.maximumHeight: 64
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       color: Cpp_ThemeManager.colors["toolbar_separator"]
     }
 
@@ -219,7 +219,7 @@ Rectangle {
       id: structureBt
       text: qsTr("Widgets")
       enabled: dashboardBt.checked
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: root.structureClicked()
       icon.source: "qrc:/rcc/icons/toolbar/structure.svg"
     }
@@ -231,7 +231,7 @@ Rectangle {
       id: dashboardBt
       text: qsTr("Dashboard")
       onClicked: root.dashboardClicked()
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       enabled: Cpp_UI_Dashboard.available
       icon.source: "qrc:/rcc/icons/toolbar/dashboard.svg"
     }
@@ -243,7 +243,7 @@ Rectangle {
       implicitWidth: 1
       Layout.fillHeight: true
       Layout.maximumHeight: 64
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       color: Cpp_ThemeManager.colors["toolbar_separator"]
     }
 
@@ -252,7 +252,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("MQTT")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: app.showMqttConfiguration()
       icon.source: Cpp_MQTT_Client.isConnectedToHost ?
                      (Cpp_MQTT_Client.clientMode === 1 ?
@@ -268,7 +268,7 @@ Rectangle {
       implicitWidth: 1
       Layout.fillHeight: true
       Layout.maximumHeight: 64
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       color: Cpp_ThemeManager.colors["toolbar_separator"]
     }
 
@@ -277,7 +277,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Examples")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/toolbar/examples.svg"
       onClicked: Qt.openUrlExternally("https://github.com/Serial-Studio/Serial-Studio/tree/master/examples")
     }
@@ -287,7 +287,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Help")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/toolbar/help.svg"
       onClicked: Qt.openUrlExternally("https://github.com/Serial-Studio/Serial-Studio/wiki")
     }
@@ -298,7 +298,7 @@ Rectangle {
     Widgets.BigButton {
       text: qsTr("About")
       onClicked: app.showAboutDialog()
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/toolbar/about.svg"
     }
 
@@ -315,7 +315,7 @@ Rectangle {
     //
     Widgets.BigButton {
       checked: Cpp_IO_Manager.connected
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       implicitWidth: metrics.width + 16
       font: Cpp_Misc_CommonFonts.boldUiFont
       Layout.minimumWidth: metrics.width + 16

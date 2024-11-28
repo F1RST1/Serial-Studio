@@ -123,7 +123,7 @@ Item {
           Layout.maximumWidth: 24
           Layout.minimumHeight: 24
           Layout.maximumHeight: 24
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           icon.color: Cpp_ThemeManager.colors["text"]
           icon.source: "qrc:/rcc/icons/buttons/center.svg"
           onClicked: map.center = QtPositioning.coordinate(root.latitude, root.longitude)
@@ -136,7 +136,7 @@ Item {
           Layout.minimumHeight: 24
           Layout.maximumHeight: 24
           model: map.supportedMapTypes
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           displayText: qsTr("Map Type: %1").arg(currentText)
           onCurrentIndexChanged: map.activeMapType = map.supportedMapTypes[currentIndex]
         }
@@ -195,7 +195,7 @@ Item {
             icon.height: 96
             background: Item {}
             icon.color: "#D8343D"
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/images/crosshair.svg"
           }
         }

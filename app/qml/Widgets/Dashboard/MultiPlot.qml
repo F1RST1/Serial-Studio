@@ -129,13 +129,13 @@ Item {
                   width: 14
                   height: 14
                   color: root.model.colors[index]
-                  Layout.alignment: Qt.AlignVCenter
+                  Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                 }
 
                 Label {
                   elide: Qt.ElideMiddle
                   text: root.model.labels[index]
-                  Layout.alignment: Qt.AlignVCenter
+                  Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                   Layout.maximumWidth: 128 - 14 - 8
                   color: Cpp_ThemeManager.colors["widget_text"]
                   font: Cpp_Misc_CommonFonts.customMonoFont(0.8)

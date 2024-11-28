@@ -30,12 +30,12 @@ ColumnLayout {
     Image {
       source: root.icon
       sourceSize: Qt.size(18, 18)
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
     }
 
     Label {
       text: root.title
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       opacity: hideAll.checked ? 0.5 : 1
       font: Cpp_Misc_CommonFonts.customUiFont(0.8, true)
       color: Cpp_ThemeManager.colors["pane_section_label"]

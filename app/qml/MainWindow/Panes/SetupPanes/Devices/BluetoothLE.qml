@@ -146,7 +146,7 @@ Item {
         id: spinner
         visible: running
         sourceSize: Qt.size(18, 18)
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         source: "qrc:/rcc/images/spinner.svg"
 
         property bool running: parent.visible
@@ -171,7 +171,7 @@ Item {
       Label {
         Layout.fillWidth: true
         text: qsTr("Scanning....")
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       }
     }
 
@@ -185,14 +185,14 @@ Item {
 
       Image {
         sourceSize: Qt.size(96, 96)
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         source: "qrc:/rcc/images/hammer.svg"
       }
 
       Label {
         Layout.fillWidth: true
         wrapMode: Label.WordWrap
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         text: qsTr("Sorry, this system is not supported yet. " +
                    "We'll update Serial Studio to work with this operating " +
                    "system as soon as Qt officially supports it.")

@@ -202,7 +202,7 @@ Window {
           icon.width: 18
           icon.height: 18
           opacity: enabled ? 1 : 0.5
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           onClicked: Cpp_CSV_Player.previousFrame()
           icon.source: "qrc:/rcc/icons/buttons/media-prev.svg"
           icon.color: Cpp_ThemeManager.colors["button_text"]
@@ -213,7 +213,7 @@ Window {
           icon.width: 32
           icon.height: 32
           onClicked: Cpp_CSV_Player.toggle()
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           icon.color: Cpp_ThemeManager.colors["button_text"]
           icon.source: (Cpp_CSV_Player.framePosition >= Cpp_CSV_Player.frameCount - 1) ?
                          "qrc:/rcc/icons/buttons/media-stop.svg" :
@@ -225,7 +225,7 @@ Window {
           icon.width: 18
           icon.height: 18
           opacity: enabled ? 1 : 0.5
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           onClicked: Cpp_CSV_Player.nextFrame()
           icon.source: "qrc:/rcc/icons/buttons/media-next.svg"
           icon.color: Cpp_ThemeManager.colors["button_text"]

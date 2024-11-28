@@ -91,7 +91,7 @@ Item {
               implicitWidth: 18
               implicitHeight: 18
               radius: implicitWidth / 2
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               border.color: Cpp_ThemeManager.colors["widget_border"]
               color: root.model.states[index] ? ledColor : Qt.darker(ledColor)
 
@@ -106,7 +106,7 @@ Item {
             Label {
               elide: Qt.ElideRight
               text: root.model.titles[index]
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               font: Cpp_Misc_CommonFonts.monoFont
               horizontalAlignment: Label.AlignLeft
               Layout.maximumWidth: layout.width - 4 - 24

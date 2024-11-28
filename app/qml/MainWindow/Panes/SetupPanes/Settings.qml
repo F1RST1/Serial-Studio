@@ -146,13 +146,13 @@ Item {
       Image {
         sourceSize: Qt.size(48, 48)
         source: "qrc:/rcc/images/tip.svg"
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       }
 
       Label {
         opacity: 0.6
         Layout.fillWidth: true
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         wrapMode: Label.WrapAtWordBoundaryOrAnywhere
         text: qsTr("Using the plugin system, other applications \& scripts can " +
                    "interact with %1 by establishing a TCP connection on port " +

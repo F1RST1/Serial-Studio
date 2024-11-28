@@ -87,7 +87,7 @@ Item {
               elide: Qt.ElideRight
               Layout.fillWidth: true
               text: root.model.titles[index] + ":"
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               font: Cpp_Misc_CommonFonts.monoFont
               horizontalAlignment: Label.AlignRight
               visible: text !== "" && root.unitsVisible
@@ -106,7 +106,7 @@ Item {
               elide: Qt.ElideRight
               Layout.fillWidth: true
               text: root.model.values[index]
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               font: Cpp_Misc_CommonFonts.monoFont
               Layout.maximumWidth: layout.width - 8
               horizontalAlignment: Label.AlignHCenter
@@ -124,7 +124,7 @@ Item {
               Layout.fillWidth: true
               text: root.model.units[index]
               color: root.model.colors[index]
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               font: Cpp_Misc_CommonFonts.monoFont
               horizontalAlignment: Label.AlignLeft
               visible: text !== "" && root.unitsVisible

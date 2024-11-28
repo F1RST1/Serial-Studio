@@ -180,7 +180,7 @@ Widgets.Pane {
             enabled: hasChildren
             sourceSize: Qt.size(8, 8)
             opacity: hasChildren ? 1 : 0
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             rotation: model.treeViewExpanded ? 0 : 270
             source: "qrc:/rcc/icons/project-editor/treeview/indicator.svg"
 
@@ -204,7 +204,7 @@ Widgets.Pane {
             id: icon
             source: model.treeViewIcon
             sourceSize: Qt.size(12, 12)
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           }
 
           //
@@ -222,7 +222,7 @@ Widgets.Pane {
             Layout.fillWidth: true
             elide: Label.ElideRight
             text: model.treeViewText
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             font: depth === 0 ? Cpp_Misc_CommonFonts.boldUiFont :
                                 Cpp_Misc_CommonFonts.uiFont
             color: current ? Cpp_ThemeManager.colors["highlighted_text"] :
@@ -236,7 +236,7 @@ Widgets.Pane {
             opacity: 0.7
             id: frameIndex
             visible: depth > 1
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             font: Cpp_Misc_CommonFonts.monoFont
             text: "[" + qsTr("IDX %1").arg(model.treeViewFrameIndex) + "]"
             color: current ? Cpp_ThemeManager.colors["highlighted_text"] :

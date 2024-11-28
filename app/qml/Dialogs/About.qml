@@ -157,7 +157,7 @@ Window {
           Layout.maximumWidth: 128
           Layout.minimumHeight: 128
           Layout.maximumHeight: 128
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           sourceSize: Qt.size(128, 128)
           source: {
             if (Screen.pixelDensity >= 2)
@@ -170,7 +170,7 @@ Window {
         ColumnLayout {
           spacing: 0
           Layout.fillWidth: true
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
 
           Label {
             text: Cpp_AppName

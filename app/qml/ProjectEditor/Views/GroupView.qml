@@ -102,7 +102,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Dataset")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentGroupIsEditable
           onClicked: Cpp_JSON_ProjectModel.addDataset(SerialStudio.DatasetGeneric)
           icon.source: "qrc:/rcc/icons/project-editor/actions/add-dataset.svg"
@@ -115,7 +115,7 @@ Widgets.Pane {
           iconSize: 24
           text: qsTr("Plot")
           toolbarButton: false
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentGroupIsEditable
           onClicked: Cpp_JSON_ProjectModel.addDataset(SerialStudio.DatasetPlot)
           icon.source: "qrc:/rcc/icons/project-editor/actions/add-plot.svg"
@@ -128,7 +128,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("FFT Plot")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentGroupIsEditable
           onClicked: Cpp_JSON_ProjectModel.addDataset(SerialStudio.DatasetFFT)
           icon.source: "qrc:/rcc/icons/project-editor/actions/add-fft.svg"
@@ -141,7 +141,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Bar/Level")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentGroupIsEditable
           onClicked: Cpp_JSON_ProjectModel.addDataset(SerialStudio.DatasetBar)
           icon.source: "qrc:/rcc/icons/project-editor/actions/add-bar.svg"
@@ -154,7 +154,7 @@ Widgets.Pane {
           iconSize: 24
           text: qsTr("Gauge")
           toolbarButton: false
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentGroupIsEditable
           onClicked: Cpp_JSON_ProjectModel.addDataset(SerialStudio.DatasetGauge)
           icon.source: "qrc:/rcc/icons/project-editor/actions/add-gauge.svg"
@@ -167,7 +167,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Compass")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentGroupIsEditable
           onClicked: Cpp_JSON_ProjectModel.addDataset(SerialStudio.DatasetCompass)
           icon.source: "qrc:/rcc/icons/project-editor/actions/add-compass.svg"
@@ -180,7 +180,7 @@ Widgets.Pane {
           iconSize: 24
           text: qsTr("LED")
           toolbarButton: false
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           enabled: Cpp_JSON_ProjectModel.currentGroupIsEditable
           onClicked: Cpp_JSON_ProjectModel.addDataset(SerialStudio.DatasetLED)
           icon.source: "qrc:/rcc/icons/project-editor/actions/add-led.svg"
@@ -200,7 +200,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Duplicate")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           onClicked: Cpp_JSON_ProjectModel.duplicateCurrentGroup()
           icon.source: "qrc:/rcc/icons/project-editor/actions/duplicate.svg"
         }
@@ -212,7 +212,7 @@ Widgets.Pane {
           iconSize: 24
           toolbarButton: false
           text: qsTr("Delete")
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           onClicked: Cpp_JSON_ProjectModel.deleteCurrentGroup()
           icon.source: "qrc:/rcc/icons/project-editor/actions/delete.svg"
         }

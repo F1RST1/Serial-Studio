@@ -126,7 +126,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("New")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: Cpp_JSON_ProjectModel.newJsonFile()
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/new.svg"
     }
@@ -136,7 +136,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Open")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: Cpp_JSON_ProjectModel.openJsonFile()
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/open.svg"
     }
@@ -146,7 +146,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Save")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: Cpp_JSON_ProjectModel.saveJsonFile(false)
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/save.svg"
       enabled: Cpp_JSON_ProjectModel.modified && Cpp_JSON_ProjectModel.groupCount > 0 && Cpp_JSON_ProjectModel.datasetCount > 0
@@ -157,7 +157,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Save As")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: Cpp_JSON_ProjectModel.saveJsonFile(true)
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/save-as.svg"
       enabled: Cpp_JSON_ProjectModel.groupCount > 0 && Cpp_JSON_ProjectModel.datasetCount > 0
@@ -170,7 +170,7 @@ Rectangle {
       width: 1
       Layout.fillHeight: true
       Layout.maximumHeight: 64
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       color: Cpp_ThemeManager.colors["toolbar_separator"]
     }
 
@@ -179,7 +179,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Action")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       onClicked: Cpp_JSON_ProjectModel.addAction()
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/add-action.svg"
     }
@@ -191,7 +191,7 @@ Rectangle {
       width: 1
       Layout.fillHeight: true
       Layout.maximumHeight: 64
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       color: Cpp_ThemeManager.colors["toolbar_separator"]
     }
 
@@ -200,7 +200,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Data Grid")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/add-datagrid.svg"
       onClicked: Cpp_JSON_ProjectModel.addGroup(qsTr("Data Grid"), SerialStudio.DataGrid)
     }
@@ -210,7 +210,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Multiple Plots")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/add-multiplot.svg"
       onClicked: Cpp_JSON_ProjectModel.addGroup(qsTr("Multiple Plot"), SerialStudio.MultiPlot)
     }
@@ -220,7 +220,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Accelerometer")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/add-accelerometer.svg"
       onClicked: Cpp_JSON_ProjectModel.addGroup(qsTr("Accelerometer"), SerialStudio.Accelerometer)
     }
@@ -230,7 +230,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Gyroscope")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/add-gyroscope.svg"
       onClicked: Cpp_JSON_ProjectModel.addGroup(qsTr("Gyroscope"), SerialStudio.Gyroscope)
     }
@@ -240,7 +240,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Map")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/add-gps.svg"
       onClicked: Cpp_JSON_ProjectModel.addGroup(qsTr("GPS Map"), SerialStudio.GPS)
     }
@@ -250,7 +250,7 @@ Rectangle {
     //
     Widgets.BigButton {
       text: qsTr("Container")
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       icon.source: "qrc:/rcc/icons/project-editor/toolbar/add-group.svg"
       onClicked: Cpp_JSON_ProjectModel.addGroup(qsTr("Dataset Container"), SerialStudio.NoGroupWidget)
     }

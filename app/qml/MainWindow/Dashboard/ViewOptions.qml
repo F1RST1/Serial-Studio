@@ -159,12 +159,12 @@ Widgets.Pane {
 
           Image {
             sourceSize: Qt.size(18, 18)
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             source: "qrc:/rcc/icons/dashboard/view.svg"
           }
 
           Label {
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             text: qsTr("Visualization Options")
             font: Cpp_Misc_CommonFonts.customUiFont(0.8, true)
             color: Cpp_ThemeManager.colors["pane_section_label"]
@@ -416,13 +416,13 @@ Widgets.Pane {
 
               Image {
                 sourceSize: Qt.size(18, 18)
-                Layout.alignment: Qt.AlignVCenter
+                Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                 source: "qrc:/rcc/icons/panes/clear.svg"
               }
 
               Label {
                 text: qsTr("Clear Dashboard Data")
-                Layout.alignment: Qt.AlignVCenter
+                Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                 horizontalAlignment: Text.AlignLeft
                 color: Cpp_ThemeManager.colors["button_text"]
               }
@@ -447,13 +447,13 @@ Widgets.Pane {
 
               Image {
                 sourceSize: Qt.size(18, 18)
-                Layout.alignment: Qt.AlignVCenter
+                Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                 source: "qrc:/rcc/icons/panes/console.svg"
               }
 
               Label {
                 text: qsTr("Display Console Window")
-                Layout.alignment: Qt.AlignVCenter
+                Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                 horizontalAlignment: Text.AlignLeft
                 color: Cpp_ThemeManager.colors["button_text"]
               }
@@ -480,13 +480,13 @@ Widgets.Pane {
 
               Image {
                 sourceSize: Qt.size(18, 18)
-                Layout.alignment: Qt.AlignVCenter
+                Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                 source: "qrc:/rcc/icons/panes/scale.svg"
                 visible: Cpp_UI_Dashboard.plotCount > 0 || Cpp_UI_Dashboard.multiPlotCount > 0
               }
 
               Label {
-                Layout.alignment: Qt.AlignVCenter
+                Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
                 horizontalAlignment: Text.AlignLeft
                 text: qsTr("Adjust Plot Scales & Positions")
                 color: Cpp_ThemeManager.colors["button_text"]

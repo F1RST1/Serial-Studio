@@ -108,7 +108,7 @@ Controls.GroupBox {
       Image {
         source: root.icon
         sourceSize: Qt.size(16, 16)
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
       }
 
       Controls.Label {
@@ -116,7 +116,7 @@ Controls.GroupBox {
         text: root.title
         elide: Qt.ElideRight
         Layout.fillWidth: true
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         horizontalAlignment: Qt.AlignLeft
         font: Cpp_Misc_CommonFonts.boldUiFont
         color: root.hardBorder ?

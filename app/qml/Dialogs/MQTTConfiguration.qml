@@ -478,7 +478,7 @@ Window {
               checkable: true
               icon.color: palette.text
               Layout.maximumWidth: height
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               icon.source: "qrc:/rcc/icons/buttons/visibility.svg"
               onCheckedChanged: _password.echoMode = (checked ? TextField.Normal :
                                                                 TextField.Password)
@@ -605,7 +605,7 @@ Window {
               icon.color: palette.text
               opacity: enabled ? 1 : 0.5
               Layout.maximumWidth: height
-              Layout.alignment: Qt.AlignVCenter
+              Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
               onClicked: Cpp_MQTT_Client.loadCaFile()
               icon.source: "qrc:/rcc/icons/buttons/open.svg"
               enabled: _certificateMode.currentIndex === 1  && _ssl.checked
@@ -635,7 +635,7 @@ Window {
           icon.height: 18
           onClicked: root.close()
           text: qsTr("Close") + "  "
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           icon.source: "qrc:/rcc/icons/buttons/close.svg"
           icon.color: Cpp_ThemeManager.colors["button_text"]
         }
@@ -648,7 +648,7 @@ Window {
           icon.width: 18
           icon.height: 18
           highlighted: true
-          Layout.alignment: Qt.AlignVCenter
+          Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
           checked: Cpp_MQTT_Client.isConnectedToHost
           onClicked: Cpp_MQTT_Client.toggleConnection()
           icon.color: Cpp_ThemeManager.colors["button_text"]

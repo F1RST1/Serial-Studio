@@ -62,7 +62,7 @@ Item {
       //
       Layout.fillWidth: true
       Layout.fillHeight: true
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
 
       //
       // Compass background

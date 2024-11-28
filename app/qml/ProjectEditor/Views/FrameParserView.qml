@@ -188,7 +188,7 @@ Widgets.Pane {
             text: qsTr("Reset")
             toolbarButton: false
             onClicked: frameParser.reload()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/icons/code-editor/reload.svg"
           }
 
@@ -200,7 +200,7 @@ Widgets.Pane {
             text: qsTr("Import")
             toolbarButton: false
             onClicked: frameParser.import()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/icons/code-editor/import.svg"
           }
 
@@ -213,7 +213,7 @@ Widgets.Pane {
             text: qsTr("Validate \& Save")
             onClicked: frameParser.apply()
             enabled: frameParser.isModified
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/icons/code-editor/apply.svg"
           }
 
@@ -224,7 +224,7 @@ Widgets.Pane {
             implicitWidth: 1
             Layout.fillHeight: true
             Layout.maximumHeight: 48
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             color: Cpp_ThemeManager.colors["groupbox_border"]
           }
 
@@ -236,7 +236,7 @@ Widgets.Pane {
             text: qsTr("Undo")
             toolbarButton: false
             onClicked: frameParser.undo()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             enabled: frameParser.undoAvailable
             icon.source: "qrc:/rcc/icons/code-editor/undo.svg"
           }
@@ -249,7 +249,7 @@ Widgets.Pane {
             text: qsTr("Redo")
             toolbarButton: false
             onClicked: frameParser.redo()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             enabled: frameParser.redoAvailable
             icon.source: "qrc:/rcc/icons/code-editor/redo.svg"
           }
@@ -261,7 +261,7 @@ Widgets.Pane {
             implicitWidth: 1
             Layout.fillHeight: true
             Layout.maximumHeight: 48
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             color: Cpp_ThemeManager.colors["groupbox_border"]
           }
 
@@ -273,7 +273,7 @@ Widgets.Pane {
             text: qsTr("Cut")
             toolbarButton: false
             onClicked: frameParser.cut()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/icons/code-editor/cut.svg"
           }
 
@@ -285,7 +285,7 @@ Widgets.Pane {
             text: qsTr("Copy")
             toolbarButton: false
             onClicked: frameParser.copy()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/icons/code-editor/copy.svg"
           }
 
@@ -297,7 +297,7 @@ Widgets.Pane {
             text: qsTr("Paste")
             toolbarButton: false
             onClicked: frameParser.paste()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/icons/code-editor/paste.svg"
           }
 
@@ -308,7 +308,7 @@ Widgets.Pane {
             implicitWidth: 1
             Layout.fillHeight: true
             Layout.maximumHeight: 48
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             color: Cpp_ThemeManager.colors["groupbox_border"]
           }
 
@@ -320,7 +320,7 @@ Widgets.Pane {
             text: qsTr("Help")
             toolbarButton: false
             onClicked: frameParser.help()
-            Layout.alignment: Qt.AlignVCenter
+            Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
             icon.source: "qrc:/rcc/icons/code-editor/help.svg"
           }
 

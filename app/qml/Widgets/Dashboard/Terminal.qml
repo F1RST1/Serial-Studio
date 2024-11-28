@@ -228,7 +228,7 @@ Item {
         implicitHeight: 24
         Layout.maximumWidth: 24
         opacity: enabled ? 1 : 0.5
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         enabled: Cpp_IO_Manager.readWrite
         onClicked: app.showFileTransmission()
         icon.source: "qrc:/rcc/icons/buttons/attach.svg"
@@ -241,7 +241,7 @@ Item {
         font: terminal.font
         Layout.fillWidth: true
         opacity: enabled ? 1 : 0.5
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         enabled: Cpp_IO_Manager.readWrite
         placeholderText: qsTr("Send Data to Device") + "..."
         palette.base: Cpp_ThemeManager.colors["console_base"]
@@ -340,7 +340,7 @@ Item {
         text: "HEX"
         id: hexCheckbox
         opacity: enabled ? 1 : 0.5
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         enabled: Cpp_IO_Manager.readWrite
         checked: Cpp_IO_Console.dataMode === 1
         onCheckedChanged: {
@@ -353,7 +353,7 @@ Item {
         id: lineEndingCombo
         opacity: enabled ? 1 : 0.5
         enabled: Cpp_IO_Manager.readWrite
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         model: Cpp_IO_Console.lineEndings
         currentIndex: Cpp_IO_Console.lineEnding
         onCurrentIndexChanged: {
@@ -372,7 +372,7 @@ Item {
       CheckBox {
         id: timestampCheck
         text: qsTr("Show Timestamp")
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         checked: Cpp_IO_Console.showTimestamp
         onCheckedChanged: {
           if (Cpp_IO_Console.showTimestamp !== checked)
@@ -384,7 +384,7 @@ Item {
         id: echoCheck
         text: qsTr("Echo")
         checked: Cpp_IO_Console.echo
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         onCheckedChanged: {
           if (Cpp_IO_Console.echo !== checked)
             Cpp_IO_Console.echo = checked
@@ -394,7 +394,7 @@ Item {
       CheckBox {
         id: vt100Check
         text: qsTr("Emulate VT-100")
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         checked: terminal.vt100emulation
         onCheckedChanged: {
           if (terminal.vt100emulation !== checked)
@@ -412,7 +412,7 @@ Item {
         implicitHeight: 24
         Layout.fillWidth: true
         Layout.maximumWidth: 164
-        Layout.alignment: Qt.AlignVCenter
+        Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
         model: Cpp_IO_Console.displayModes
         currentIndex: Cpp_IO_Console.displayMode
         displayText: qsTr("Display: %1").arg(currentText)

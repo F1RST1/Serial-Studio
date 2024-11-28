@@ -220,7 +220,7 @@ Item {
       Layout.maximumHeight: 18
       Layout.leftMargin: -8
       checked: Cpp_IO_Serial.autoReconnect
-      Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
+      Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter | Qt.AlignLeft 
       onCheckedChanged: {
         if (Cpp_IO_Serial.autoReconnect !== checked)
           Cpp_IO_Serial.autoReconnect = checked
@@ -237,7 +237,7 @@ Item {
       Layout.maximumHeight: 18
       Layout.leftMargin: -8
       checked: Cpp_IO_Serial.dtrEnabled
-      Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
+      Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter | Qt.AlignLeft 
       onCheckedChanged: {
         if (Cpp_IO_Serial.dtrEnabled !== checked)
           Cpp_IO_Serial.dtrEnabled = checked

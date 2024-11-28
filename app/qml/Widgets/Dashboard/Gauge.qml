@@ -58,7 +58,7 @@ Item {
       Layout.fillWidth: true
       Layout.fillHeight: true
       Layout.topMargin: trackWidth / 2
-      Layout.alignment: Qt.AlignVCenter
+      Layout.alignment: Qt.AlignVCenter | Qt.AlignLeft 
 
       //
       // Colors

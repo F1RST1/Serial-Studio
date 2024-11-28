@@ -271,7 +271,7 @@ Item {
           color: "#ffffff"
           elide: Qt.ElideLeft
           anchors.fill: parent
-          verticalAlignment: Qt.AlignVCenter
+          verticalAlignment: Qt.AlignVCenter | Qt.AlignLeft 
           font: Cpp_Misc_CommonFonts.monoFont
           horizontalAlignment: Qt.AlignHCenter
           text: qsTr("Roll: %1").arg(root.rollAngle.toFixed(2) + "°")
@@ -289,7 +289,7 @@ Item {
           color: "#ffffff"
           elide: Qt.ElideLeft
           anchors.fill: parent
-          verticalAlignment: Qt.AlignVCenter
+          verticalAlignment: Qt.AlignVCenter | Qt.AlignLeft 
           font: Cpp_Misc_CommonFonts.monoFont
           horizontalAlignment: Qt.AlignHCenter
           text: qsTr("Yaw: %1").arg(root.yawAngle.toFixed(2) + "°")
@@ -307,7 +307,7 @@ Item {
           color: "#ffffff"
           elide: Qt.ElideLeft
           anchors.fill: parent
-          verticalAlignment: Qt.AlignVCenter
+          verticalAlignment: Qt.AlignVCenter | Qt.AlignLeft 
           font: Cpp_Misc_CommonFonts.monoFont
           horizontalAlignment: Qt.AlignHCenter
           text: qsTr("Pitch: %1").arg(root.pitchAngle.toFixed(2) + "°")
