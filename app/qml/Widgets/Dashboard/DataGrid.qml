@@ -109,7 +109,7 @@ Item {
               Layout.alignment: Qt.AlignVCenter
               font: Cpp_Misc_CommonFonts.monoFont
               Layout.maximumWidth: layout.width - 8
-              horizontalAlignment: Label.AlignHCenter
+              horizontalAlignment: Label.AlignLeft
               color: root.unitsVisible ? Cpp_ThemeManager.colors["widget_text"] :
                                          root.model.colors[index]
             }
